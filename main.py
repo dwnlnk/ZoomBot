@@ -22,12 +22,11 @@ def openZoom():
     pyautogui.keyUp('altleft')
     time.sleep(0.5)
     pyautogui.moveTo(1800, 900)
-    pyautogui.typewrite("Jordan's ZoomBot: Good day! Jordan will be here shortly. Thank you for your patience!") #enter your name
+    pyautogui.typewrite("(Enter Name Here)'s ZoomBot: Good day! (Enter name here) will be here shortly. Thank you for your patience!") #enter your name
     time.sleep(1)
     pyautogui.press('enter')
 
 schedule.every().day.at("08:00").do(openZoom) #enter what time you want it to start
-#schedule.every(0.5).minutes.do(openZoom)
 
 while True:
     schedule.run_pending()
